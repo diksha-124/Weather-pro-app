@@ -1,0 +1,518 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>WeatherPro | Smart Weather Dashboard</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="weather.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <!-- CSS -->
+
+    
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+        
+        <div class="logo">
+
+            <i class="fa-solid fa-cloud-sun"></i>
+
+            <h2>WeatherPro</h2>
+
+        </div>
+
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#features">Features</a></li>
+
+            <li><a href="#dashboard">Dashboard</a></li>
+
+            <!--<li><a href="#">Contact</a></li>-->
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+        <button class="theme-btn">
+
+            <i class="fa-solid fa-moon"></i>
+
+        </button>
+
+    </nav>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-left">
+
+            <span class="badge">
+
+                Live Weather Intelligence
+
+            </span>
+
+            <h1>
+
+                Professional
+                <span>Weather Dashboard</span>
+
+            </h1>
+
+            <p>
+
+                Get real-time weather updates,
+                temperature, humidity,
+                wind speed, sunrise, sunset,
+                pressure and much more
+                for any city around the world.
+
+            </p>
+
+            <!-- Search -->
+
+            <div class="search-box">
+
+                <input type="text"
+                       id="cityInput"
+                       placeholder="Search any city...">
+
+                <button id="searchBtn">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+            </div>
+
+            <!-- Quick Features -->
+
+            <div class="hero-features">
+
+                <div>
+
+                    <i class="fa-solid fa-bolt"></i>
+
+                    Live Updates
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Global Search
+
+                </div>
+
+                <div>
+
+                    <i class="fa-solid fa-cloud"></i>
+
+                    Accurate Data
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="hero-right">
+
+            <!--<div class="preview-card">
+
+                <img id="previewIcon"
+                     src="https://openweathermap.org/img/wn/01d@4x.png"
+                     alt="Weather">
+
+                <h2>29°C</h2>
+
+                <h3>Clear Sky</h3>
+
+                <p>London, UK</p>
+
+            </div>-->
+
+            <div class="preview-card">
+
+                <img id="previewIcon"
+                     src="https://openweathermap.org/img/wn/01d@4x.png">
+
+                <h2 id="previewTemp">29°C</h2>
+
+                <h3 id="previewCondition">Clear Sky</h3>
+
+                <p id="previewLocation">London, UK</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section id="features"
+             class="features">
+
+        <h2>
+
+            Powerful Features
+
+        </h2>
+
+        <p>
+
+            Everything you need inside
+            one professional weather tool.
+
+        </p>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-temperature-half"></i>
+
+                <h3>Temperature</h3>
+
+                <p>Current & Feels Like</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-droplet"></i>
+
+                <h3>Humidity</h3>
+
+                <p>Live Humidity Data</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-wind"></i>
+
+                <h3>Wind Speed</h3>
+
+                <p>Wind Direction & Speed</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-eye"></i>
+
+                <h3>Visibility</h3>
+
+                <p>Atmospheric Visibility</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-gauge-high"></i>
+
+                <h3>Pressure</h3>
+
+                <p>Air Pressure</p>
+
+            </div>
+
+            <div class="feature-card">
+
+                <i class="fa-solid fa-sun"></i>
+
+                <h3>Sunrise & Sunset</h3>
+
+                <p>Daily Sun Timings</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <section id="dashboard"
+             class="dashboard">
+
+        <div class="dashboard-header">
+
+            <h2>
+
+                Weather Dashboard
+
+            </h2>
+
+            <p id="currentDateTime">
+
+                Tuesday • 10:30 AM
+
+            </p>
+
+        </div>
+
+
+
+        <!-- Main Weather Card -->
+
+        <div class="weather-main">
+
+            <div class="weather-info">
+
+                <h2 id="cityName">
+
+                    New York
+
+                </h2>
+
+                <p id="country">
+
+                    United States
+
+                </p>
+
+                <h1 id="temperature">
+
+                    28°C
+
+                </h1>
+
+                <h3 id="condition">
+
+                    Broken Clouds
+
+                </h3>
+
+            </div>
+
+            <div class="weather-image">
+
+                <img id="weatherIcon"
+                     src="https://openweathermap.org/img/wn/04d@4x.png"
+                     alt="Weather Icon">
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Weather Details -->
+
+        <div class="weather-grid">
+
+            <div class="weather-card">
+
+                <i class="fa-solid fa-temperature-three-quarters"></i>
+
+                <h4>Feels Like</h4>
+
+                <p id="feelsLike">30°C</p>
+
+            </div>
+
+            <div class="weather-card">
+
+                <i class="fa-solid fa-droplet"></i>
+
+                <h4>Humidity</h4>
+
+                <p id="humidity">70%</p>
+
+            </div>
+
+            <div class="weather-card">
+
+                <i class="fa-solid fa-wind"></i>
+
+                <h4>Wind</h4>
+
+                <p id="wind">10 km/h</p>
+
+            </div>
+
+            <div class="weather-card">
+
+                <i class="fa-solid fa-eye"></i>
+
+                <h4>Visibility</h4>
+
+                <p id="visibility">10 km</p>
+
+            </div>
+
+            <div class="weather-card">
+
+                <i class="fa-solid fa-gauge-high"></i>
+
+                <h4>Pressure</h4>
+
+                <p id="pressure">1012 hPa</p>
+
+            </div>
+
+            <div class="weather-card">
+
+                <i class="fa-solid fa-sun"></i>
+
+                <h4>Sunrise</h4>
+
+                <p id="sunrise">05:32 AM</p>
+
+            </div>
+
+            <div class="weather-card">
+
+                <i class="fa-solid fa-moon"></i>
+
+                <h4>Sunset</h4>
+
+                <p id="sunset">07:15 PM</p>
+
+            </div>
+
+            <div class="weather-card">
+
+                <i class="fa-solid fa-earth-americas"></i>
+
+                <h4>Country</h4>
+
+                <p id="countryName">USA</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+    <!--<footer>
+
+        <h3>WeatherPro</h3>
+
+        <p>
+
+            Smart Weather Dashboard built using
+            HTML, CSS, JavaScript & OpenWeather API.
+
+        </p>
+
+        <p>
+
+            © 2026 WeatherPro. All Rights Reserved.
+
+        </p>
+
+    </footer>-->
+
+  
+
+        <!--<h3>WeatherPro</h3>
+
+    <p>
+    <p>
+        Stay updated with accurate weather forecasts, live climate conditions,
+        dynamic themes and instant city-based weather information.
+    </p>        </p>
+
+    <div class="developer-info">
+
+        <p><strong>Developed By:</strong> Diksha Sahota</p>
+
+        <p>
+            <i class="fa-solid fa-envelope"></i>
+            dikshasahota06@gmail.com
+        </p>
+
+        <p>
+            <i class="fa-brands fa-github"></i>
+            github.com/diksha-124
+        </p>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 WeatherPro. All Rights Reserved.
+    </p>-->
+        <footer id="contact">
+
+            <h3>WeatherPro</h3>
+
+            <p>
+                Stay updated with accurate weather forecasts, live climate conditions,
+                dynamic themes and instant city-based weather information.
+            </p>
+
+            <div class="developer-info">
+
+                <p><strong>Developed By:</strong> Diksha Sahota</p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:dikshasahota06@gmail.com">
+                        dikshasahota06@gmail.com
+                    </a>
+                </p>
+
+
+
+                <p>
+                    <a href="https://github.com/diksha-124" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        github.com/diksha-124
+                    </a>
+                </p>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 WeatherPro. All Rights Reserved.
+            </p>
+
+        </footer>
+   
+
+    <!-- JavaScript -->
+
+    <script src="weather.js"></script>
+
+
+</body>
+
+</html>
