@@ -87,7 +87,7 @@ The application provides an elegant dashboard experience with live weather updat
 
 Software Developer | ASP.NET Developer | Front-End Developer
 
-📧 **Email:** dikshasahota06@gmail.com
+📧 **Email:** dikshasahota28@gmail.com
 
 🐙 **GitHub:** https://github.com/diksha-124
 
